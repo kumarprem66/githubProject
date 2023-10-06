@@ -11,7 +11,7 @@ public class GitHubDataClient {
 
 
 
-        String authToken = "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";
+        String authToken = "";
 
         // Create HTTP headers with the Authorization header containing the token
         HttpHeaders headers = new HttpHeaders();

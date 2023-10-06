@@ -18,8 +18,6 @@ public class GitHubDataController {
     @PostMapping
     public ResponseEntity<?> fetchAndSaveGitHubData(@RequestBody GitHubDataRequest request) {
         try {
-            // Implement the logic to fetch data from the specified GitHub endpoint
-            // and save it to the database using your service class (gitHubDataService).
 
             MyGit myGit = gitHubDataService.fetchAndSaveGitHubData(request.getUrl());
 

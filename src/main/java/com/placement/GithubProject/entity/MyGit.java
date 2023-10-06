@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class MyGit {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String html_url;

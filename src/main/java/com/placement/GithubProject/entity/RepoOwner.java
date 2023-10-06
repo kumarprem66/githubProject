@@ -12,12 +12,14 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"html_url"}))
 public class RepoOwner {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String avatar_url;
+
     private String html_url;
     private String type;
     private String site_admin;
